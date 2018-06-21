@@ -15,7 +15,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.6.0'
+  gem 'rspec-rails', '~> 3.7.1'
+  gem 'factory_bot_rails', '~>4.8.0'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
