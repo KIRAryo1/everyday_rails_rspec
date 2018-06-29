@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'pp'
 
 RSpec.describe "ProjectsApis", type: :request do
   describe "GET /projects_apis" do
@@ -20,6 +21,7 @@ RSpec.describe "ProjectsApis", type: :request do
         user_token: user.authentication_token
       }
 
+      debugger
       expect(response).to have_http_status(:success)
       json = JSON.parse(response.body)
       expect(json.length).to eq 1
